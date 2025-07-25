@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+      font-family: "Host Grotesk", sans-serif;
+
+  
+}
+@font-face {
+    font-family: w;
+    src: url(fonts/Geist-Medium-BF6569491e1c281.otf);
+}
+@font-face {
+    font-family: a;
+    src: url(fonts/Agency.ttf);
+}
+
+.header{
+    height: 10vh;
+    width: 100%;
+    
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+
+}
+#section1,#section2{
+    height: 100vh;
+    width: 100%;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+      gap: 1rem;  
+  list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+   
+   
+}
+.hero{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    height: 90vh;
+}
+.text-container{
+    position: relative;
+   
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+}
+.text-container .text-wrapper .title{
+    height: 200px;
+}
+.text-container .text-wrapper .title span{
+    font-size: 12rem;
+    font-weight: 600;
+      font-family: a;
+  margin-bottom: 4rem;
+
+}
+.title span {
+  display: inline-block;
+
+}
+.text-container .text-wrapper .introduction{
+    display: flex;
+    gap: 4rem;
+}
+.text-container .text-wrapper .introduction .intro{
+    left: 20%;
+    position: absolute;
+}
+.text-container .text-wrapper .introduction .intro-text{
+    max-width: 350px;
+    line-height: 2;
+    word-spacing: 3px;
+    position: absolute;
+    right: 1px;
+    text-align: left;
+    text-transform: capitalize;
+}
+.text-container .text-wrapper{
+    position: absolute;
+    top: 30%;
+}
+.img-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+/*styling hero image*/
+.img-container{
+    height: 100%;
+    width: 100%;
+}
+.img-wrapper{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+}
+.img-wrapper .img-text{
+   position: absolute;
+   left: 10%;
+   top: 23%;
+   font-size: 1.5rem;
+}
+.img-wrapper .img-content{
+    position: absolute;
+    top: 28%;
+   border: 1px solid black;
+   height: 490px;
+   width: 490px;
+   background: url("images/img1.avif");
+   
+    background-size: cover;
+}
