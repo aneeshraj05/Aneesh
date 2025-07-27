@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
       font-family: "Host Grotesk", sans-serif;
-
+scroll-behavior: smooth;
   
 }
 @font-face {
@@ -13,6 +13,10 @@
 @font-face {
     font-family: a;
     src: url(fonts/Agency.ttf);
+}
+@font-face {
+    font-family: g;
+    src: url(fonts/Geist-Medium-BF6569491e1c281.otf);
 }
 
 .header{
@@ -27,7 +31,7 @@
     padding: 1.5rem 2rem;
 
 }
-#section1,#section2{
+#section1,#section2,#section3,#section4{
     height: 100vh;
     width: 100%;
 }
@@ -89,6 +93,7 @@
     right: 1px;
     text-align: left;
     text-transform: capitalize;
+    overflow: hidden;
 }
 .text-container .text-wrapper{
     position: absolute;
@@ -99,11 +104,7 @@
     height: 100%;
     width: 100%;
 }
-/*styling hero image*/
-.img-container{
-    height: 100%;
-    width: 100%;
-}
+
 .img-wrapper{
     position: relative;
     height: 100%;
@@ -123,9 +124,197 @@
     position: absolute;
     top: 28%;
    border: 1px solid black;
-   height: 490px;
+   height: 0px;
    width: 490px;
    background: url("images/img1.avif");
+   opacity: 0;
    
     background-size: cover;
+}
+#section2{
+    position: relative;
+    overflow: hidden;
+}
+.sec1,.sec2{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 3;
+    font-size: 2rem;
+    
+    position: absolute;
+    padding: 2rem;
+
+}
+.sec1 h1{
+ font-family: "Bebas Neue", sans-serif;
+text-transform: uppercase;
+}
+.sec2 h1{
+          font-family: "Bebas Neue", sans-serif;
+text-transform: uppercase;
+}
+.sec1{
+    color: black;
+    background-color: white;
+    display: flex;
+z-index: -1;
+      position: absolute; /* ✅ ADD THIS */
+
+   
+}
+.sec2{
+    background-color: black;
+    color: white;
+z-index: 1111;
+      position: absolute; 
+
+clip-path: circle(100px at var(--x, 50%) var(--y, 50%));
+    transition: clip-path 100ms;
+    pointer-events: none; 
+}
+#section3 {
+    position: relative;
+    background-color: #E6E6E6;
+    overflow: hidden;
+}
+#section3 .skills{
+    position: absolute;
+    right: 0;
+    font-size: 19rem;
+    bottom: 0;
+    font-weight: 800;
+}
+
+
+#section3 .languages{
+    position: absolute;
+}
+#section3 .languages{
+    position: absolute;
+}
+
+#section3 .wrapper{
+    height: 100%;
+   
+}
+
+#section3 .img-wrapper{
+    height: 100%;
+}
+#section3{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+}
+#section3 .img-container{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    right: 90px;
+    top: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+   
+}
+#section3 .img-container img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+
+#section3 .languages,
+#section3 .softwares {
+ position: absolute;
+    
+}
+#section3 .languages,
+#section3 .softwares h1{
+    font-size: 2.6rem;
+}
+#section3 .languages{
+    
+    height: 300px;
+    width: 400px;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+   row-gap: 4px;
+  
+}
+#section3 .softwares{
+height: 300px;
+width: 400px;
+margin-left: 4rem;
+bottom:4%;
+row-gap: 1rem;
+
+}
+#section3 .languages .l1{
+font-family: g;
+    margin-left: 4rem;
+    font-size: 25px;
+}
+#section3 .softwares .s1{
+    margin-left: 4rem;
+font-family: g;
+
+row-gap: 1rem;
+ font-size: 25px;
+}
+.contact{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+.contact .left{
+    display: flex;
+}
+.contact .linkedin{
+        display: flex;
+
+}
+.contact .right{
+        display: flex;
+        
+
+}
+.contact .left img{
+    height: 500px;
+    position: absolute;
+    top: 19%;
+        left: 15%;
+        transform: rotate(-30deg);
+
+}
+
+.contact .right img{
+    height: 500px;
+        position: absolute;
+            top: 18%;
+                    transform: rotate(30deg);
+
+
+
+}
+.contact .title{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-size: 2rem;
+}
+.contact .linkedin svg{
+    height: 100px;
+position: absolute;
+        top: 40%;
+left: 47%;
 }
